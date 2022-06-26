@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <title>Slickの練習</title>
+    <style>
+        .slider {
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        .slider img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .slick-prev:before,
+        .slick-next:before{
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Slickの練習</h1>
+    <div class="slider">
+        <div><img src="images/01.jpg" alt=""></div>
+        <div><img src="images/02.jpg" alt=""></div>
+        <div><img src="images/03.jpg" alt=""></div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                // setting- name: setting - value
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
